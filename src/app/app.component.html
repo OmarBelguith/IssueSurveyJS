@@ -1,0 +1,32 @@
+<button class="btn btn-lg btn-primary align-center" data-toggle="modal" href="#surveyModal">Open Modal</button>
+<div class="modal fade" id="surveyModal" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close" type="button" data-dismiss="modal" id="close">&times;</button>
+        <h3>Update Your Lab Course</h3>
+      </div>
+      <form>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="labNameEdit">Lab Course Description:</label>
+            <input class="form-control" id="labNameEdit" type="text">
+          </div>
+          <survey-editor></survey-editor>
+          <label for="numberEdit">lab Course Number:</label>
+          <div class="form-group input-group spinner">
+            <input type="text" id="numberEdit" class="form-control" name="number">
+            <div class="input-group-btn-vertical">
+              <button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+              <button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a class="btn btn-md btn-danger" data-dismiss="modal">Cancel</a>
+          <button type="submit" class="btn btn-md btn-primary">Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
